@@ -5,13 +5,11 @@ export type ItemType = "bug" | "feature" | "improvement";
 export interface PulseItem {
   id: string;
   title: string;
-  description: string;
   type: ItemType;
   priority: Priority;
   status: Status;
   impact: number;
   effort: number;
-  createdAt: string;
+  createdAt: Date;
   submitter: string;
-  tags: string[];
 }
