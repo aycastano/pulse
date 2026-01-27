@@ -276,12 +276,12 @@ export default function PulseDashboard() {
         {/* Footer */}
         <footer className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700 text-center text-sm text-gray-500 dark:text-gray-400">
           <p className="mb-2">
-            💡 <strong>Metodología del Score:</strong> (Impacto × 2) + Peso de
-            Prioridad - Esfuerzo
+            💡 <strong>Scoring Methodology:</strong>(Impact × 2) + Priority
+            Weight − Effort
           </p>
           <p>
-            Construido con React + TypeScript • Persistencia en URL •
-            Accesibilidad WCAG 2.1
+            Built with React + TypeScript • Local Storage Persistence • WCAG 2.1
+            Accessibility
           </p>
         </footer>
       </div>
