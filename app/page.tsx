@@ -152,7 +152,6 @@ export default function PulseDashboard() {
               Intelligent Prioritization Dashboard • {items.length} Total items
             </p>
           </div>
-          <ThemeToggle theme={theme} onToggle={toggleTheme} />
         </header>
 
         {/* KPIs */}
