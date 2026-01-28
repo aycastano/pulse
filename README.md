@@ -4,22 +4,12 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-## 🚀 Cómo correr el proyecto localmente
 
-### Requisitos
+### Requiriment
 - Node.js ≥ 18
 - npm o pnpm
 
-### Pasos
+### Step
 
 ```bash
 npm install
@@ -47,40 +37,37 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-🧠 Decisiones de Producto
+🧠 Product Decisions
 
-Durante la prueba prioricé calidad de experiencia y arquitectura sobre cantidad de features.
+During the technical test, I prioritized experience quality and architecture over the number of features.
+1. Focus on clear prioritization
+I implemented a composite score (Impact × 2 + Priority − Effort) to rank items.
+The goal was to help users quickly understand what to tackle first, rather than just displaying data.
 
-1. Enfoque en priorización clara
+2. UX First
 
-Implementé un score compuesto (Impact × 2 + Priority − Effort) para ordenar los ítems.
-El objetivo fue que el usuario entienda rápidamente qué atender primero, no solo listar datos.
+Key KPIs displayed at the top for immediate context.
+Top 5 Priorities highlighted to enable fast decision-making.
+Simple, combinable filters (text, status, priority, tags).
+Clear states: loading, error, and empty.
 
-2. UX primero
+3. Clean Architecture
 
-KPIs visibles arriba para contexto inmediato.
-Top 5 Priorities destacado para toma rápida de decisiones.
-Filtros simples y combinables (texto, estado, prioridad, tags).
-Estados claros: loading, error y empty.
-
-
-3. Arquitectura limpia
-
-Separación clara entre:
-domain (tipos, reglas, score)
-hooks (estado y lógica)
+Clear separation between:
+domain (types, business rules, scoring logic)
+hooks (state management and application logic)
 components (UI)
-Evité lógica de negocio dentro de componentes de presentación.
+Business logic is intentionally kept out of presentational components.
 
-⚖️ Tradeoffs (qué dejé fuera por tiempo)
+Trade-offs (What I intentionally left out due to time constraints)
 
-Por limitación de tiempo decidí no implementar:
-Persistencia real en backend (se simula con estado/local logic).
-Autenticación de usuarios.
-Tests automatizados (Jest / Playwright).
-Internacionalización (i18n).
-Animaciones complejas con librerías externas (Framer Motion).
-Optimización avanzada de rendimiento (virtualización de listas).
-Dark / Light Mode
+Due to time limitations, I intentionally did not implement:
+Real backend persistence (simulated with local state and in-memory logic).
+User authentication.
+Automated testing (Jest / Playwright).
+Internationalization (i18n).
+Advanced animations using external libraries (e.g. Framer Motion).
+Advanced performance optimizations (e.g. list virtualization).
+Dark / Light mode support.
 
 
