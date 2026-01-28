@@ -21,7 +21,6 @@ import {
   CheckCircle2,
   Clock,
   TrendingUp,
-  Search,
   Activity,
   AlertTriangle,
 } from "lucide-react";

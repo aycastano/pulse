@@ -43,7 +43,7 @@ export function ItemDetail({
           {/* Description */}
           <div>
             <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-              Descripción
+              Description
             </h3>
             <p className="text-gray-900 dark:text-white">{item.description}</p>
           </div>
@@ -52,7 +52,7 @@ export function ItemDetail({
           <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-                Estado
+                State
               </label>
               <select
                 value={item.status}
@@ -71,7 +71,7 @@ export function ItemDetail({
 
             <div>
               <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-                Prioridad
+                Priority
               </label>
               <select
                 value={item.priority}
@@ -101,7 +101,7 @@ export function ItemDetail({
             </div>
             <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
               <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">
-                Impacto
+                Impact
               </p>
               <p className="text-3xl font-bold text-blue-600 dark:text-blue-400">
                 {item.impact}/5
@@ -109,7 +109,7 @@ export function ItemDetail({
             </div>
             <div className="bg-orange-50 dark:bg-orange-900/20 rounded-lg p-4">
               <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">
-                Esfuerzo
+                Effort
               </p>
               <p className="text-3xl font-bold text-orange-600 dark:text-orange-400">
                 {item.effort}/5
@@ -130,7 +130,7 @@ export function ItemDetail({
             )}
             <div className="flex items-center gap-2 text-sm">
               <Calendar className="w-4 h-4 text-gray-500" />
-              <span className="text-gray-600 dark:text-gray-400">Creado:</span>
+              <span className="text-gray-600 dark:text-gray-400">Created:</span>
               <span className="font-medium text-gray-900 dark:text-white">
                 {new Date(item.createdAt).toLocaleDateString("es-ES", {
                   year: "numeric",
@@ -161,7 +161,7 @@ export function ItemDetail({
               <div className="flex items-center gap-2 mb-3">
                 <History className="w-4 h-4 text-gray-500" />
                 <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300">
-                  Historial
+                  Record
                 </h3>
               </div>
               <div className="space-y-2">
@@ -171,7 +171,7 @@ export function ItemDetail({
                     className="text-sm p-3 bg-gray-50 dark:bg-gray-900 rounded-lg"
                   >
                     <span className="text-gray-600 dark:text-gray-400">
-                      {entry.field} cambiado de{" "}
+                      {entry.field}changed from{" "}
                       <strong className="text-gray-900 dark:text-white">
                         {entry.oldValue}
                       </strong>{" "}

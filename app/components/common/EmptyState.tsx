@@ -6,10 +6,10 @@ export function EmptyState() {
         <Search className="w-8 h-8 text-gray-400" />
       </div>
       <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-        No se encontraron resultados
+        No results found
       </h3>
       <p className="text-gray-600 dark:text-gray-400">
-        Intenta ajustar los filtros de búsqueda
+        Try adjusting the search filters
       </p>
     </div>
   );

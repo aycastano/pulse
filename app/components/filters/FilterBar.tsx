@@ -45,7 +45,7 @@ export function FilterBar({
             className="px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg text-sm bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:ring-2 focus:ring-purple-500 transition-colors"
             aria-label="Filtrar por estado"
           >
-            <option value="all">Todos los estados</option>
+            <option value="all">All states</option>
             {Object.entries(STATUS_CONFIG).map(([key, config]) => (
               <option key={key} value={key}>
                 {config.label}
@@ -62,7 +62,7 @@ export function FilterBar({
           className="px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg text-sm bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:ring-2 focus:ring-purple-500 transition-colors"
           aria-label="Filtrar por prioridad"
         >
-          <option value="all">Todas las prioridades</option>
+          <option value="all">All priorities</option>
           {Object.entries(PRIORITY_CONFIG).map(([key, config]) => (
             <option key={key} value={key}>
               {config.label}
@@ -83,9 +83,9 @@ export function FilterBar({
             className="px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg text-sm bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:ring-2 focus:ring-purple-500 transition-colors"
             aria-label="Ordenar por"
           >
-            <option value="score">Score (Prioridad inteligente)</option>
-            <option value="impact">Mayor impacto</option>
-            <option value="createdAt">Más reciente</option>
+            <option value="score">Score (Smart priority)</option>
+            <option value="impact">Greater impact</option>
+            <option value="createdAt">Latest</option>
           </select>
         </div>
       </div>

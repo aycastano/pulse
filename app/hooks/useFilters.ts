@@ -11,7 +11,7 @@ export function useFilters() {
     pageSize: 10,
   });
 
-  // Initialize from URL on mount
+
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const urlFilters: Partial<FilterState> = {};
@@ -51,7 +51,7 @@ export function useFilters() {
 
   const updateFilters = useCallback((updates: Partial<FilterState>) => {
     setFilters((prev) => {
-      // Si cambian los filtros (no la página), resetear a página 1
+
       const shouldResetPage =
         updates.search !== undefined ||
         updates.status !== undefined ||

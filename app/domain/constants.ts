@@ -40,7 +40,7 @@ export const PRIORITY_CONFIG = {
     icon: Clock,
   },
   medium: {
-    label: "medium",
+    label: "Medium",
     weight: 2,
     color: "bg-yellow-100 text-yellow-800 border-yellow-300",
     icon: AlertCircle,
