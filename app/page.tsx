@@ -2,12 +2,12 @@
 
 import React, { useState, useMemo } from "react";
 import { PulseItem } from "./domain/types";
-import { useTheme } from "./hooks/useTheme";
+//import { useTheme } from "./hooks/useTheme";
 import { useItems } from "./hooks/useItems";
 import { useFilters } from "./hooks/useFilters";
 import { calculateScore } from "./domain/score";
 import { PRIORITY_CONFIG } from "./domain/constants";
-import { ThemeToggle } from "./components/common/ThemeToggle";
+//import { ThemeToggle } from "./components/common/ThemeToggle";
 import { KPICard } from "./components/common/KPICard";
 import { SimpleBarChart } from "./components/charts/SimpleBarChart";
 import { FilterBar } from "./components/filters/FilterBar";
@@ -26,7 +26,7 @@ import {
 } from "lucide-react";
 
 export default function PulseDashboard() {
-  const { theme, toggleTheme } = useTheme();
+  //const { theme, toggleTheme } = useTheme();
   const { items, loading, error, updateItem, retryLoad } = useItems();
   const { filters, updateFilters } = useFilters();
   const [selectedItem, setSelectedItem] = useState<PulseItem | null>(null);
