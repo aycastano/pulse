@@ -73,14 +73,14 @@ export function ItemCard({
         <div className="flex items-center gap-3 text-sm">
           <span className="text-gray-600 dark:text-gray-400">
             <Zap className="inline w-3.5 h-3.5 mr-1" />
-            Impacto:{" "}
+            Impact:{" "}
             <strong className="text-gray-900 dark:text-white">
               {item.impact}/5
             </strong>
           </span>
           <span className="text-gray-600 dark:text-gray-400">
             <Target className="inline w-3.5 h-3.5 mr-1" />
-            Esfuerzo:{" "}
+            Effort:{" "}
             <strong className="text-gray-900 dark:text-white">
               {item.effort}/5
             </strong>

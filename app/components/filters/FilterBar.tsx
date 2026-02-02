@@ -22,7 +22,7 @@ export function FilterBar({
         />
         <input
           type="search"
-          placeholder="Buscar por título o descripción..."
+          placeholder="Search by title or description..."
           value={filters.search}
           onChange={(e) => onUpdate({ search: e.target.value })}
           className="w-full pl-10 pr-4 py-2.5 border border-gray-300 dark:border-gray-600 rounded-lg text-sm bg-white dark:bg-gray-900 text-gray-900 dark:text-white placeholder-gray-500 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-colors"
