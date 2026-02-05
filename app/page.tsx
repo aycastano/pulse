@@ -234,7 +234,7 @@ export default function PulseDashboard() {
         </section>
 
         {/* Items List */}
-        <section aria-label="Lista de items">
+        <section aria-label="List of items">
           {filteredItems.length === 0 ? (
             <EmptyState />
           ) : (
